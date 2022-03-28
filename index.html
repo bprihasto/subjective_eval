@@ -161,6 +161,351 @@ a:hover{
       </tbody>
     </table>
 
+
+
+    <h2>F-to-F Voice Conversion</h2>
+    <p></p>
+    <p></p>
+	<h3> Random sample: </h3>
+	<ol>
+	    <li>SF1_TF1: p248 (source) and p288 (target) </li>
+      <li>SF2_TF2: p265 (source) and p300 (target) </li>
+  		<li>SF3_TF3: p268 (source) and p303 (target)  </li>
+	</ol>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Source</th>
+          <th>CycleGAN<sup>[1]</sup></th>
+          <th>CVC<sup>[2]</sup></th>
+          <th>Target</th>
+        </tr>
+      </thead>
+      <tbody>
+		  <td> SF1_TF1 (SEEN)</td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/source/p237_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/cgan_seen/p237_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/cvc_seen/p237_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/target/p243_002.wav"
+            type="audio/wav"></audio></td>
+    </tr>
+
+		  <td> SF2_TF2 (SEEN)</td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/source/p302_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/cgan_seen/p302_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/cvc_seen/p302_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/target/p245_002.wav"
+            type="audio/wav"></audio></td>
+    </tr>
+
+
+		  <td> SF3_TF3 (SEEN)</td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/source/p311_013.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/cgan_seen/p311_013.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/cvc_seen/p311_013.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/target/p292_013.wav"
+            type="audio/wav"></audio></td>
+    </tr>
+
+    <td> SF1_TF1 (UNSEEN)</td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/source/p237_042.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/cgan_unseen/p237_042.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/cvc_unseen/p237_042.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/target/p243_002.wav"
+          type="audio/wav"></audio></td>
+  </tr>
+
+    <td> SF2_TF2 (UNSEEN)</td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/source/p302_040.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/cgan_unseen/p302_040.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/cvc_unseen/p302_040.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/target/p245_002.wav"
+          type="audio/wav"></audio></td>
+  </tr>
+
+
+    <td> SF3_TF3 (UNSEEN)</td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/source/p311_060.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/cgan_unseen/p311_060.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/cvc_unseen/p311_060.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/target/p292_013.wav"
+          type="audio/wav"></audio></td>
+  </tr>
+      </tbody>
+    </table>
+
+
+    <h2>F-to-F Voice Conversion</h2>
+    <p></p>
+    <p></p>
+	<h3> Random sample: </h3>
+	<ol>
+	    <li>SF1_TF1: p248 (source) and p288 (target) </li>
+      <li>SF2_TF2: p265 (source) and p300 (target) </li>
+  		<li>SF3_TF3: p268 (source) and p303 (target)  </li>
+	</ol>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Source</th>
+          <th>CycleGAN<sup>[1]</sup></th>
+          <th>CVC<sup>[2]</sup></th>
+          <th>Target</th>
+        </tr>
+      </thead>
+      <tbody>
+		  <td> SF1_TF1 (SEEN)</td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/source/p237_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/cgan_seen/p237_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/cvc_seen/p237_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/target/p243_002.wav"
+            type="audio/wav"></audio></td>
+    </tr>
+
+		  <td> SF2_TF2 (SEEN)</td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/source/p302_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/cgan_seen/p302_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/cvc_seen/p302_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/target/p245_002.wav"
+            type="audio/wav"></audio></td>
+    </tr>
+
+
+		  <td> SF3_TF3 (SEEN)</td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/source/p311_013.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/cgan_seen/p311_013.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/cvc_seen/p311_013.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/target/p292_013.wav"
+            type="audio/wav"></audio></td>
+    </tr>
+
+    <td> SF1_TF1 (UNSEEN)</td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/source/p237_042.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/cgan_unseen/p237_042.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/cvc_unseen/p237_042.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/target/p243_002.wav"
+          type="audio/wav"></audio></td>
+  </tr>
+
+    <td> SF2_TF2 (UNSEEN)</td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/source/p302_040.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/cgan_unseen/p302_040.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/cvc_unseen/p302_040.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/target/p245_002.wav"
+          type="audio/wav"></audio></td>
+  </tr>
+
+
+    <td> SF3_TF3 (UNSEEN)</td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/source/p311_060.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/cgan_unseen/p311_060.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/cvc_unseen/p311_060.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/target/p292_013.wav"
+          type="audio/wav"></audio></td>
+  </tr>
+      </tbody>
+    </table>
+
+
+    <h2>F-to-F Voice Conversion</h2>
+    <p></p>
+    <p></p>
+	<h3> Random sample: </h3>
+	<ol>
+	    <li>SF1_TF1: p248 (source) and p288 (target) </li>
+      <li>SF2_TF2: p265 (source) and p300 (target) </li>
+  		<li>SF3_TF3: p268 (source) and p303 (target)  </li>
+	</ol>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Source</th>
+          <th>CycleGAN<sup>[1]</sup></th>
+          <th>CVC<sup>[2]</sup></th>
+          <th>Target</th>
+        </tr>
+      </thead>
+      <tbody>
+		  <td> SF1_TF1 (SEEN)</td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/source/p237_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/cgan_seen/p237_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/cvc_seen/p237_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/target/p243_002.wav"
+            type="audio/wav"></audio></td>
+    </tr>
+
+		  <td> SF2_TF2 (SEEN)</td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/source/p302_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/cgan_seen/p302_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/cvc_seen/p302_002.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/target/p245_002.wav"
+            type="audio/wav"></audio></td>
+    </tr>
+
+
+		  <td> SF3_TF3 (SEEN)</td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/source/p311_013.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/cgan_seen/p311_013.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/cvc_seen/p311_013.wav"
+            type="audio/wav"></audio></td>
+      <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+          <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/target/p292_013.wav"
+            type="audio/wav"></audio></td>
+    </tr>
+
+    <td> SF1_TF1 (UNSEEN)</td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/source/p237_042.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/cgan_unseen/p237_042.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/cvc_unseen/p237_042.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF1_TF1/target/p243_002.wav"
+          type="audio/wav"></audio></td>
+  </tr>
+
+    <td> SF2_TF2 (UNSEEN)</td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/source/p302_040.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/cgan_unseen/p302_040.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/cvc_unseen/p302_040.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF2_TF2/target/p245_002.wav"
+          type="audio/wav"></audio></td>
+  </tr>
+
+
+    <td> SF3_TF3 (UNSEEN)</td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/source/p311_060.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/cgan_unseen/p311_060.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/cvc_unseen/p311_060.wav"
+          type="audio/wav"></audio></td>
+    <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+        <source src="https://bima-demo-exp.netlify.app/UPLOAD/02_SF3_TF3/target/p292_013.wav"
+          type="audio/wav"></audio></td>
+  </tr>
+      </tbody>
+    </table>
     <!-- <h2>Many-to-one conversion</h2>
     <p></p>
     <p></p>
